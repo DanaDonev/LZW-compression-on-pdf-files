@@ -1,5 +1,5 @@
 //Information technology project for compressing pdf file using LZW algorithm, and comparison of compression rates with other file formats
-//Link to git repository with project presentation: 
+//Link to git repository with project presentation: https://github.com/DanaDonev/LZW-compression-on-pdf-files
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -144,8 +144,9 @@ long djvuFileSize = getFileSize("..\\files\\CNknjiga.djvu"); // DJVU file size
 long zipFileSize = getFileSize("..\\files\\CNknjiga.zip"); // ZIP compressed file size
 long mobiFileSize = getFileSize("..\\files\\CNknjiga.mobi"); // MOBI file size
 long txtFileSize = getFileSize("..\\files\\CNknjiga.txt"); // TXT file size
-long htmlFileSize = getFileSize("..\\files\\CNknjiga.html"); // HTML file size
-long rtfFileSize = getFileSize("..\\files\\CNknjiga.rtf"); // RTF file size
+//the next two formats are larger in size and therefore could not be uploaded to git
+long htmlFileSize = 33195  //getFileSize("..\\files\\CNknjiga.html"); // HTML file size
+long rtfFileSize = 43598  //getFileSize("..\\files\\CNknjiga.rtf"); // RTF file size
 
 // Step 5: Compare the sizes and calculate compression ratios
 double downloadedPdfCompressionRatio = (double) downloadedPdfFileSize / pdfFileSize;
